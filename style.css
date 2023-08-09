@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,7 +16,7 @@ body {
   background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
 }
 
-body *{
+body * {
   font-family: 'Inter', sans-serif;
   color: white;
 }
@@ -35,8 +35,35 @@ body *{
   width: 112px;
 }
 
-#profile p{
+#profile p {
   font-weight: 500;
   line-height: 1.5rem;
   margin-top: .5rem;
+}
+
+ul {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+ul li a {
+  border: 1px solid red;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px 24px;
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.50);
+  border-radius: 8px;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  text-decoration: none;
+  font-weight: 500;
 }
