@@ -9,8 +9,13 @@
 
 Aplicação para agrupar varios links para o instagram ou qualquer outra rede social.
 
-- Apresentação
-<video autoplay=""  src=".gitHub/apresentacao-linktree.mp4"></video>
+### Visão geral
+
+https://github.com/emanuelsantossouza/Javascript__LinkTree-Discorver-Rocketseat/assets/99850729/33ec9799-afb5-4c34-a24a-623f22c6c69c
+
+
+
+
 
 ## ✨ Tecnologia
 
