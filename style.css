@@ -44,7 +44,7 @@ body * {
 #container {
   width: 100%;
   max-width: 588px;
-  margin: 3.5rem auto 0;
+  margin: 1.5rem auto 0;
   padding: 0 1.5rem;
 }
 
@@ -65,13 +65,13 @@ body * {
 }
 
 /*Switch*/
-#switch{
+#switch {
   position: relative;
   width: 64px;
   margin: 4px auto;
 }
 
-#switch button{
+#switch button {
   width: 32px;
   height: 32px;
   background: #FFF var(--switch-bg-url) no-repeat center;
@@ -80,25 +80,28 @@ body * {
 
   position: absolute;
   top: 50%;
-  left: 0;
+  animation: slide-out 0.4s;
   z-index: 1;
   transform: translateY(-50%);
 }
 
-#switch span{
+#switch button:hover{
+  outline: 8px solid var(--hightlight-color);
+}
+
+#switch span {
   display: block;
   width: 64px;
   height: 24px;
   background: var(--surface-color);
-  border:1px solid var(--stroke-color);
+  border: 1px solid var(--stroke-color);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 9999px;
 }
 
-.light #switch button{
-  right: 0;
-  left: inherit;
+.light #switch button {
+  animation: slide-in 0.4s forwards;
 }
 
 
@@ -134,7 +137,7 @@ ul li a {
 
 ul li a:hover {
   border: 1.5px solid var(--text-color);
-  background-color:var(--surface-color-hover);
+  background-color: var(--surface-color-hover);
 }
 
 .social-links {
@@ -156,7 +159,7 @@ ul li a:hover {
 }
 
 .social-links a:hover {
-  background-color:var(--hightlight-color)
+  background-color: var(--hightlight-color)
 }
 
 footer {
@@ -164,3 +167,34 @@ footer {
   text-align: center;
   font-size: 14px;
 }
+
+/* Media query*/
+@media (min-width:700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jg);
+  }
+}
+
+/* Animation*/
+@keyframes slide-in{
+  from{
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-out{
+  from{
+    right: 0;
+  }
+  to {
+    right: 50%;
+  }
+}
+
